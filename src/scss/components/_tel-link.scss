@@ -1,0 +1,44 @@
+.tel-link {
+    width: 22px;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 50px;
+
+    position: absolute;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    background-color: var(--tertiary-dark);
+    color: var(--secondary-color);
+    
+    transition: width 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.tel-link:hover {
+    width: 150px;
+    background-color: var(--tertiary-color);
+}
+
+.tel-link .icon {
+    font-size: 20px;
+}
+
+.tel-link .number {
+    opacity: 0;
+    margin-left: 13px;
+    transition: opacity 0.3s ease;
+}
+
+.tel-link:hover .number {
+    opacity: 1;
+}
+
+@for $i from 1 through 4 {
+    .tel-link:nth-child(#{$i}) {
+      top: 150px + ($i - 1) * 60px;
+    }
+}
