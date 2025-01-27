@@ -69,6 +69,6 @@
 
 
 @mixin dark-theme(){
-    --bg-color: var(--primary-black);
-    --tx-color: var(--primary-white);
+    --bg-color: var(--primary-white);
+    --tx-color: var(--primary-black);
 }

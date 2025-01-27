@@ -26,7 +26,10 @@ const scssPath = './src/scss/**/*.scss'
 const jsPath = './src/js/**/*.js'
 const imgPath = './src/img/**/*'
 const jsHTMLFn = ["c", "d", "openURL"]
-const primJSFile =  './src/js/tools.js'
+const primJSFile =  [
+    './src/js/tools.js',
+    './src/js/data.js'
+]
 const watchOptions = {readDelay: 0, ignoreInitial: false}
 
 
@@ -73,7 +76,7 @@ gulp.task('css', async _ => {
 gulp.task('js', async _ => {
     return gulp
         .src([
-            primJSFile,
+            ...primJSFile,
             jsPath
         ])
         .pipe(plumber({

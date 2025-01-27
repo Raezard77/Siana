@@ -13,4 +13,3 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener(
         html.setAttribute("data-theme", newColorScheme)
     }
 )
-d()

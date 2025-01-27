@@ -30,6 +30,8 @@ main {
     // ...
     padding: var(--sec-padding);
     @include flex-position;
+    // ...
+    color: var(--primary-white);
 }
 
 section {

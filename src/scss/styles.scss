@@ -27,6 +27,7 @@
 //-- Components
 // @import "./components/navbar";  // ~
 @import "./components/tel-link";  // ~
+@import "./components/tx-slider";  // ~
 @import "./components/pc";  // ~
 
 
@@ -39,4 +40,5 @@
 //-- Mob View
 @media only screen and (max-width: 799px) {
     @include mq-head;
+    @include tx-slider;
 }

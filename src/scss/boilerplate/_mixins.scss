@@ -1,8 +1,8 @@
 // - Stylish - Img BG
 @mixin ele-bg(
     $url: "./assets/hero-img.webp",
-    $left-clr: rgba(0, 0, 0, 0.3),
-    $right-clr: rgba(0, 0, 0, 0.7)
+    $left-clr: rgba(0, 0, 0, 0.7),
+    $right-clr: rgba(0, 0, 0, 1)
 ){  
     background: 
         linear-gradient(to right, $left-clr, $right-clr),
