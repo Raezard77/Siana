@@ -16,6 +16,6 @@ mixin head(title= brandName)
             meta(name="keywords", content=keywords)
             meta(name="application-name", content=brandName)
             title= title
-            link(rel="stylesheet", href="./styles.css")
+            link(rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'")
             link(rel="icon", href=imgLogo)
             +customHead()

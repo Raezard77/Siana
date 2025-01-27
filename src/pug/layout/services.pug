@@ -1,0 +1,10 @@
+mixin sections()
+    each servicesSection in servicesSections
+        section
+            h2 #{servicesSection.title}
+            .section-row
+                img(src=servicesSection.img1, alt="toshiba-devices", srcset="")
+                p.hidden!= servicesSection.para1
+            .section-row.rv
+                img(src=servicesSection.img2, alt="toshiba-devices", srcset="")
+                p.hidden!= servicesSection.para2

@@ -1,34 +1,60 @@
-// - FIXED
-* {margin:0;padding:0;box-sizing:border-box;}
-:root {scroll-behavior: smooth;font-size: 62.5%;}
-::selection {color: var(--bg-color);background-color: var(--primary-color);}
-ol, ul {list-style: none;}
+//-- General
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+::selection {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+}
 @supports (scrollbar-color: var(--primary-dark) var(--secondary-black)) {
-    * {scrollbar-color: var(--primary-dark) var(--secondary-black);}
+    * {
+        scrollbar-color: var(--primary-dark) var(--secondary-black);
+    }
 }
 .debug body {
     overflow: visible;
-    * {outline: 1px solid var(--debug-color);}
+    * {
+        outline: 1px solid var(--debug-color);
+    }
 }
+
+
+
+//-- Elements
 img {
-    max-width: 100%;object-fit: contain;
-    &.circle {border-radius: 50%;height: 100%;}
+    max-width: 100%;
+    object-fit: contain;
+    &.circle {
+        border-radius: 50%;
+        height: 100%;
+    }
 }
-
-
-
-// - Changeable
-
-a, button {
+a,
+button {
     all: unset;
     cursor: pointer;
-    transition: all $transition-duration ease-in-out;  // ~
-    &:hover{filter: saturate($dark-saturation);}  // ~
+    transition: all 0.3s ease-in-out;
+    color: var(--primary-color);
+    &:hover {
+        color: var(--primary-light);
+    }
 }
-a {color: var(--primary-color);}  // ~
-button {  // ~
+a {
+    color: var(--primary-color);
+}
+button {
     background: var(--primary-color);
     color: var(--bg-color);
     padding: 1rem 1.6rem;
-    border-radius: $border-radius-btn;
+    border-radius: 1.2rem;
+}
+ol,
+ul {
+    list-style: none;
 }

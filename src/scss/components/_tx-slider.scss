@@ -10,7 +10,7 @@
 }
 
 .dynamic-word {
-    width: 22rem;
+    width: 25rem;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -48,5 +48,10 @@
     .text-slideshow {
         text-align: right;
         line-height: 7rem;
+        padding-right: 25px;
+    }
+
+    .dynamic-word {
+        width: auto;
     }
 }
