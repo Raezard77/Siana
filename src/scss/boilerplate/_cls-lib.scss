@@ -1,0 +1,24 @@
+.bold {
+    font-weight: bold;
+}
+
+
+
+.icon-div {
+    // ...
+    width: 2.5rem;
+    height: 2.5rem;
+    @include flex-position($display: inline- flex);
+    overflow: hidden;
+    // ...
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    // ...
+    svg path {
+        fill: var(--tx-color);
+    }
+    // ... Fix
+    svg {
+        height: 90%;
+    }
+}

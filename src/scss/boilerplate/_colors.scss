@@ -1,0 +1,74 @@
+@mixin brand-colors(){
+    //-- Primary
+    --primary-color: #c3073f;
+    --primary-light: #e02e64;
+    --primary-dark: #7c0327;
+
+
+
+    //-- [Almost Optional, Every Website is Different]
+    --secondary-color: #010326;
+    --secondary-light: #3a416d;
+    --secondary-dark: #00001a;
+
+
+
+    //-- [Optional]
+    --accent-color: #fd1d75;
+    --accent-light: #ff4c97;
+    --accent-dark: #c70058;
+
+
+
+    //-- [Optional]
+    --tertiary-color: #27e67c;
+    --tertiary-light: #5ef29b;
+    --tertiary-dark: #1b9f56;
+
+
+
+    //-- [Optional]
+    --quaternary-color: #6b4ee6;
+    --quaternary-light: #a178f4;
+    --quaternary-dark: #4c3b99;
+
+
+
+    //-- General
+    --shadow-color: rgba(15, 140, 255, 0.5);
+    --debug-color: crimson;
+}
+
+
+
+@mixin contextual-colors() {
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;  // ~ use orange e.g. if primary is red
+}
+
+
+
+@mixin fixed-colors(){
+    --primary-white: #fff;
+    --secondary-white: #f2f2f2;
+    --primary-black: #000;
+    --secondary-black: #1a1a1a;
+    --primary-gray: #b3b3b3;
+    --dark-gray: #4d4d4d;
+}
+
+
+
+@mixin light-theme(){
+    --bg-color: var(--primary-white);
+    --tx-color: var(--primary-black);
+}
+
+
+
+@mixin dark-theme(){
+    --bg-color: var(--primary-black);
+    --tx-color: var(--primary-white);
+}

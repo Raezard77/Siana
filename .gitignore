@@ -1,0 +1,11 @@
+## - Basic
+node_modules/
+tmp/
+TMP.md
+
+## - Server
+logs/
+*.env
+
+## - Client
+src/img/

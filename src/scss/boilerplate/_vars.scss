@@ -1,0 +1,13 @@
+$transition-duration: 0.3s;
+$dark-saturation: 0.8;
+$border-radius-btn: 1.2rem;
+$border-radius-box: 4rem;
+$nav-height:5dvh;
+
+@mixin layout-vars(){
+    --nav-inner-margin:7rem;
+    --nav-logo-width:4rem;
+    --nav--h1-size:2.5rem;
+    --nav--font-size:1.6rem;
+    --sec-padding:4.5rem;
+}

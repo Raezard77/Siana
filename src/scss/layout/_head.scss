@@ -1,0 +1,12 @@
+body {
+    background: var(--bg-color);
+    color: var(--tx-color);
+}
+
+
+// - Stylish - Img BG
+@mixin mq-head(){  
+    body {
+        background: red
+    }
+}

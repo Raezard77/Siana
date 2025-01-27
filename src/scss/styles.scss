@@ -1,0 +1,41 @@
+//-- Colors & Vars
+@import "./boilerplate/colors";
+@import "./boilerplate/vars";  // ;
+:root {
+    @include brand-colors;
+    @include contextual-colors;
+    @include fixed-colors;
+    @include light-theme;
+    @include layout-vars;
+}
+[data-theme="dark"] {
+    @include dark-theme;
+}
+
+
+
+//-- Boilerplate
+@import "./boilerplate/fonts";  // ;
+@import "./boilerplate/mixins";  // ;
+@import "./boilerplate/general";  // ;
+@import "./boilerplate/cls-lib";
+@import "./boilerplate/anime";  // ;
+@import "./boilerplate/initial";  // ;
+
+
+
+//-- Components
+// @import "./components/navbar";  // ~
+@import "./components/pc";  // ~
+
+
+
+//-- Layout
+@import "./layout/head";  // ~ @initial
+
+
+
+//-- Mob View
+@media only screen and (max-width: 799px) {
+    @include mq-head;
+}

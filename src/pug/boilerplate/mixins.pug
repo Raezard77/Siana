@@ -1,0 +1,12 @@
+//-- JS
+mixin loadScripts()
+    script(defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js")
+    script(defer src="./scripts.js")
+
+
+
+//-- Text Input Field
+mixin textInput(type="text", label="Text", name="text", id="text1")
+    .input-group
+        input(type=type, class="input-field", placeholder=" ", name=name, id=id)
+        label(for=id, class="input-label") #{label}

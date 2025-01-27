@@ -1,0 +1,96 @@
+// - Stylish - Img BG
+@mixin ele-bg(
+    $url: "./assets/hero-img.webp",
+    $left-clr: rgba(0, 0, 0, 0.3),
+    $right-clr: rgba(0, 0, 0, 0.7)
+){  
+    background: 
+        linear-gradient(to right, $left-clr, $right-clr),
+        url($url)
+        no-repeat center fixed;  
+    background-size: cover;
+}
+
+
+
+// - RWD - Grid Fluid Cols (Img Gallery)
+@mixin grid-position(
+    $cols-num: auto-fill,
+    $min-width:10rem,
+    $max-width:1fr,
+    $gap:1rem
+){
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat($cols-num, minmax($min-width, $max-width));
+    gap: $gap;
+}
+
+
+
+// - RWD - Flex Positioning for Parent Elements
+@mixin flex-position(
+    $display:flex,
+    $x:center,
+    $y:center,
+    $dir:row,
+    $gap:0
+){
+    display: $display;
+    justify-content: $x;
+    align-items: $y;
+    flex-direction: $dir;
+    gap: $gap;
+}
+
+
+
+// - Box - Creating The Box
+@mixin box-styles(
+    $min-width:20rem,
+    $height:20rem,
+    $bg:var(--bg-color),
+    $clr: var(--font-color),
+    $padding: 2rem,
+    $margin: 1rem,
+    $border: 1px solid var(--primary-color),
+    $b-radius: $border-radius-box,
+) {
+    // ...
+    min-width: $min-width;
+    height: $height;
+    // ...
+    color: $clr;
+    background: $bg;
+    // ...
+    padding: $padding;
+    margin: $margin;
+    // ...
+    border: $border;
+    border-radius: $b-radius;
+}
+
+
+
+// - Box - Add Shadow to Elements
+@mixin box-shadow(
+    $h:0,
+    $v:3px,
+    $blur:1.2rem,
+    $spread:0,
+    $clr:var(--shadow-color)
+){
+    box-shadow: $h $v $blur $spread $clr;
+}
+
+
+
+// - Box - Pinterest Imag View Style
+@mixin masonry-view(
+    $cols:4,
+    $width:30rem,
+    $gap:2rem
+){
+    columns:$width $cols;
+    column-gap:$gap;
+}
