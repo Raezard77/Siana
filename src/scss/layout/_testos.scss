@@ -1,0 +1,147 @@
+//-- Area
+
+section.testos {
+    @include flex-position();
+    flex-direction: column;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: 60px;
+    }
+}
+
+
+
+//-- Container
+.slider-container {
+    width: 60%;
+    height: 50%;
+    background: var(--primary-white);
+
+    padding: 20px;
+    border-radius: 10px;
+    @include box-shadow;
+
+    @include flex-position;
+    flex-direction: column;
+    font-size: 3rem;
+
+    overflow: hidden;
+    direction: rtl;
+}
+
+.quote-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.quote {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+    P {margin-bottom: 30px;}
+}
+
+.author {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+
+
+//-- Arrows
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    user-select: none;
+    
+    background: var(--primary-color);
+    color: var(--primary-white);
+    transition: background-color .3s ease-in-out;
+
+    font-size: 3rem;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.arrow:hover {
+    background: var(--primary-light);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+
+
+//-- Dots
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    direction: rtl;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--primary-color);
+}
+
+
+
+//-- MQ
+@mixin mq-testos(){
+    section.testos {
+        h2 {
+            position: absolute;
+            top: 120px;
+        }
+
+    .slider-container {
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        height: 80%;
+    }
+
+    .quote {
+        width: 100%;
+        overflow: auto;
+        // padding: 20px;
+        
+        p {margin-bottom: 0;}
+
+        text-wrap: pretty;
+        word-break: break-word; 
+    }
+
+    .quote , .author {
+        font-size: 1.8rem;
+    }
+
+    .arrow {
+            top:80%;
+            @include flex-position;
+        }
+    }
+}

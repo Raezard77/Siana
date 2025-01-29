@@ -1,20 +1,8 @@
-body {
-    min-height: 100dvh;
-    min-width: 100vw;
-    overflow-x: hidden;
-
-    background-color: var(--bg-color);
-    color: var(--tx-color);
-
-    font-family: "Lato", sans-serif;
-    font-size: 1.7rem;
-}
-
 header {
     // height: calc(100dvh - #{$nav-height});
     // margin-top: $nav-height;
 
-    height: 100vh;
+    height: var(--screen-height);
     width: 100%;
     position: relative;
 
@@ -31,4 +19,11 @@ main {
     padding: var(--sec-padding);
     @include flex-position;
     color: var(--primary-white);
+}
+
+
+@mixin mq-header(){  
+    header {
+        height: 100vh;
+    }
 }

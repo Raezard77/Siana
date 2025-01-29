@@ -1,6 +1,6 @@
-mixin sections()
+mixin servicesSection()
     each servicesSection in servicesSections
-        section
+        section.services
             h2 #{servicesSection.title}
             .section-row
                 img(src=servicesSection.img1, alt="toshiba-devices", srcset="")

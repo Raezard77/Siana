@@ -25,10 +25,10 @@ const pugTree = {
 const scssPath = './src/scss/**/*.scss'
 const jsPath = './src/js/**/*.js'
 const imgPath = './src/img/**/*'
-const jsHTMLFn = ["c", "d", "openURL"]
+const jsHTMLFn = ["c", "d", "openURL", "prevQuote", "nextQuote", "goToQuote"]
 const primJSFile =  [
-    './src/js/tools.js',
-    './src/js/data.js'
+    './src/js/boilerplate/tools.js',
+    './src/js/boilerplate/data.js'
 ]
 const watchOptions = {readDelay: 0, ignoreInitial: false}
 

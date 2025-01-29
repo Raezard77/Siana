@@ -73,15 +73,3 @@
     // --bg-color: var(--primary-white);
     // --tx-color: var(--primary-black);
 }
-
-
-:root {
-    @include brand-colors;
-    @include contextual-colors;
-    @include fixed-colors;
-    @include light-theme;
-}
-
-[data-theme="dark"] {
-    @include dark-theme;
-}

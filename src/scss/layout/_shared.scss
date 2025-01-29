@@ -1,0 +1,32 @@
+body {
+    // min-height: 100dvh;
+    min-width: 100vw;
+    overflow-x: hidden;
+
+    background-color: var(--bg-color);
+    color: var(--tx-color);
+
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+}
+
+section {
+    @include box-styles(
+        $min-width: 100%,
+        $height: var(--screen-height),
+        $bg: var(--primary-white),
+        $clr: var(--font-color),
+        $padding: 2rem,
+        $margin: 0,
+        $border: none,
+        $b-radius: none
+    );
+
+    h2 {
+        color: var(--primary-white);
+        background-color: var(--primary-color);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+}

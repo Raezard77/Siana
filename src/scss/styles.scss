@@ -1,10 +1,12 @@
 //-- Colors & Vars
 @import "./boilerplate/colors";
+@import "./boilerplate/vars";
 :root {
     @include brand-colors;
     @include contextual-colors;
     @include fixed-colors;
     @include light-theme;
+    @include prop-vals;
 }
 [data-theme="dark"] {
     @include dark-theme;
@@ -30,13 +32,17 @@
 
 
 //-- Layout
+@import "./layout/shared";
 @import "./layout/header";
 @import "./layout/services";
+@import "./layout/testos";
 
 
 
 //-- Mob View
 @media only screen and (max-width: 850px) {
-    @include tx-slider;
-    @include mq-sections;
+    @include mq-header;
+    @include mq-tx-slider;
+    @include mq-services;
+    @include mq-testos;
 }
