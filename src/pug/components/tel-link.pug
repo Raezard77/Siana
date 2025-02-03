@@ -1,4 +1,6 @@
-mixin telLink(tel="01030541034")
+mixin telLink(tel=phoneNum)
     a(href="tel:" + tel target="_self" class="tel-link")
         span(class="icon") 📞
         span(class="number") #{tel}
+
+//- <span class="highlight"><a href="tel:+01030541034" aria-label="Call Developer at 01030541034">01030541034</a></span>

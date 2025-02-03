@@ -6,6 +6,8 @@
 
     position: absolute;
     left: 10px;
+    top: 50vh;
+    transform:translateY(-50%);
 
     display: flex;
     align-items: center;
@@ -38,8 +40,8 @@
     opacity: 1;
 }
 
-@for $i from 1 through 4 {
-    .tel-link:nth-of-type(#{$i}) {
-      top: 260px + ($i - 1) * 60px;
-    }
-}
+// @for $i from 1 through 4 {
+//     .tel-link:nth-of-type(#{$i}) {
+//       top: 260px + ($i - 1) * 60px;
+//     }
+// }
