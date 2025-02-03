@@ -4,9 +4,11 @@
     padding: 10px 15px;
     border-radius: 50px;
 
-    position: absolute;
-    left: 10px;
-    top: 50vh;
+    position: sticky;
+    z-index: 100;
+    margin-top: -50px;
+    left: 20px;
+    top: 95vh;
     transform:translateY(-50%);
 
     display: flex;
@@ -21,7 +23,7 @@
     white-space: nowrap;
 }
 .tel-link:hover {
-    width: 150px;
+    width: 170px;
     background-color: cyan;
     color: var(--secondary-color);
 }
@@ -45,3 +47,9 @@
 //       top: 260px + ($i - 1) * 60px;
 //     }
 // }
+
+@mixin mq-tel-link(){
+    .tel-link {
+        top:85vh;
+    }
+}

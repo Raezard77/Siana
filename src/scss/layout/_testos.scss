@@ -40,7 +40,7 @@ section.testos {
     min-width: 100%;
     text-align: center;
     padding: 20px;
-    P {margin-bottom: 30px;}
+    p {margin-bottom: 30px;}
 }
 
 .author {
@@ -112,10 +112,11 @@ section.testos {
 //-- MQ
 @mixin mq-testos(){
     section.testos {
+        height: 900px;
 
         h2 {
-                position: absolute;
-                top: 120px;
+            position: absolute;
+            top: 90px;
         }
 
         .slider-container {
@@ -125,10 +126,15 @@ section.testos {
             height: 80%;
         }
 
+        .quote-wrapper {
+            height: 100%;
+            align-items: center;
+            margin-top: 40px;
+        }
+
         .quote {
             width: 100%;
             overflow: auto;
-            // padding: 20px;
             
             p {margin-bottom: 0;}
 
@@ -141,7 +147,7 @@ section.testos {
         }
 
         .arrow {
-                display: none;
+            display: none;
         }
     }
 }

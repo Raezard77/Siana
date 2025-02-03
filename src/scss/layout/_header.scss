@@ -25,5 +25,6 @@ main {
 @mixin mq-header(){  
     header {
         height: 100vh;
+        background-position: 70%;
     }
 }
