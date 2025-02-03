@@ -1,0 +1,110 @@
+#pop-form-open-btn {
+    width: 23px;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 50px;
+
+    position: fixed;
+    z-index: 100;
+    // margin-top: -20px;
+    left: 21px;
+    top: 95vh;
+    transform:translateY(-50%);
+
+    @include flex-position;
+}
+.pop-form-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    height: 100%;
+    width: 100%;
+    @include flex-position;
+    background-color: rgba(3, 2, 2, 0.952);
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+}
+.pop-form-bg.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+
+
+.pop-form-container {
+    position: relative;  // : otherwise clicking can't reach it
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+
+    background-color: var(--primary-white);
+    color: var(--primary-color);
+    @include box-shadow;
+
+    @include flex-position;
+    flex-direction: column;
+
+    direction: rtl;
+}
+.pop-form-container form {
+    width: 90%;
+    height: 90%;
+    @include flex-position($x:space-around);
+    flex-direction: column;
+}
+.pop-form-container form {
+    input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &[type=submit] {
+            all: unset;
+            cursor: pointer;
+
+            color: var(--primary-white);
+            background-color: var(--primary-color);
+            transition: background-color .3s ease-in-out;
+
+            padding: 15px;
+            border-radius: 25px;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                background-color: var(--primary-dark);
+            }
+        }
+    }
+
+    textarea {
+        height: 30%;
+    }
+
+    input, textarea {
+        background-color: var(--primary-white);
+        color: var(--primary-black);
+        font-weight: bold;
+        width: 80%;
+        padding: 7px 15px;
+        border-radius: 10px;
+        border: 1.3px solid var(--primary-black);
+        &:focus {
+            border-color: var(--primary-color);
+        }
+    }
+}
+
+
+
+@mixin mq-pop-form (){
+    #pop-form-open-btn {
+        top: 85vh;
+    }
+}

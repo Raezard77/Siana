@@ -1,0 +1,13 @@
+mixin pop-form-btn()
+    button#pop-form-open-btn 📩
+
+mixin pop-form()
+    .pop-form-bg
+        .pop-form-container
+            form(action="")
+                input(type="text", placeholder="الاسم..")
+                input(type="text", placeholder="رقم التلفون..")
+                input(type="text", placeholder="نوع الجهاز..")
+                input(type="text", placeholder="العنوان..")
+                textarea(placeholder="تفاصيل المشكلة")
+                input(type="submit", value="أرسل")

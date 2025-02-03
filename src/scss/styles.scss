@@ -28,6 +28,7 @@
 @import "./components/scroll-ani";
 @import "./components/tel-link";
 @import "./components/tx-slider";
+@import "./components/pop-form";
 
 
 
@@ -42,8 +43,10 @@
 //-- Mob View
 @media only screen and (max-width: 850px) {
     @include mq-tel-link;
-    @include mq-header;
     @include mq-tx-slider;
+    @include mq-pop-form;
+
+    @include mq-header;
     @include mq-services;
     @include mq-testos;
 }

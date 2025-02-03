@@ -6,7 +6,7 @@ mixin loadScripts()
 
 
 //-- Text Input Field
-mixin textInput(type="text", label="Text", name="text", id="text1")
+mixin textInput(type, label, name, id)
     .input-group
         input(type=type, class="input-field", placeholder=" ", name=name, id=id)
         label(for=id, class="input-label") #{label}

@@ -4,11 +4,11 @@
     padding: 10px 15px;
     border-radius: 50px;
 
-    position: sticky;
+    position: fixed;
     z-index: 100;
     margin-top: -50px;
     left: 20px;
-    top: 95vh;
+    top: 94.5vh;
     transform:translateY(-50%);
 
     display: flex;
@@ -50,6 +50,6 @@
 
 @mixin mq-tel-link(){
     .tel-link {
-        top:85vh;
+        top:84.5vh;
     }
 }
