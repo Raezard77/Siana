@@ -10,7 +10,7 @@
 }
 
 .dynamic-word {
-    width: 25rem;
+    width: 27rem;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -53,5 +53,6 @@
 
     .dynamic-word {
         width: auto;
+        width: 100%;text-align: right;
     }
 }
