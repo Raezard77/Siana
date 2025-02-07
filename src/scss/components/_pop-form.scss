@@ -12,6 +12,7 @@
     transform:translateY(-50%);
 
     @include flex-position;
+    background-color: var(--tertiary-dark);
 }
 .pop-form-bg {
     position: fixed;

@@ -55,3 +55,11 @@
         }
     }
 }
+
+@mixin lab-mq-tel-link(){
+    @for $i from 1 through 4 {
+        .tel-link:nth-of-type(#{$i}) {
+          top: 94.5vh - ($i - 1) * 9vh;
+        }
+    }
+}

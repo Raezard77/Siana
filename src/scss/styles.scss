@@ -50,3 +50,8 @@
     @include mq-services;
     @include mq-testos;
 }
+
+//-- Lab View
+@media only screen and (max-height: 760px) {
+    @include lab-mq-tel-link;
+}

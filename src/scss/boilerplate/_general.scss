@@ -12,9 +12,9 @@
     color: var(--bg-color);
     background-color: var(--primary-color);
 }
-@supports (scrollbar-color: var(--primary-dark) var(--secondary-black)) {
+@supports (scrollbar-color: var(--primary-light) var(--primary-black)) {
     * {
-        scrollbar-color: var(--primary-dark) var(--secondary-black);
+        scrollbar-color: var(--primary-light) var(--primary-black);
     }
 }
 .debug body {
