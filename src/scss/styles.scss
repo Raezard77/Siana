@@ -12,8 +12,6 @@
     @include dark-theme;
 }
 
-
-
 //-- Boilerplate
 // @import "./boilerplate/fonts";
 @import "./boilerplate/mixins";
@@ -21,16 +19,13 @@
 @import "./boilerplate/cls-lib";
 @import "./boilerplate/anime";
 
-
-
 //-- Components
 // @import "./components/navbar";  // ~
 @import "./components/scroll-ani";
 @import "./components/tel-link";
 @import "./components/tx-slider";
 @import "./components/pop-form";
-
-
+@import "./components/hotline-box";
 
 //-- Layout
 @import "./layout/shared";
@@ -38,7 +33,10 @@
 @import "./layout/services";
 @import "./layout/testos";
 
-
+//-- Lab View
+@media only screen and (max-height: 760px) {
+    @include lab-mq-tel-link;
+}
 
 //-- Mob View
 @media only screen and (max-width: 850px) {
