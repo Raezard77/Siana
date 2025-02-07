@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "fix:live-server": "sed -i '/Live reload enabled\\./d' \"./node_modules/live-server/injected.html\"",
     "gulp": "nodemon --watch gulp.js --exec 'gulp --gulpfile gulp.js'",
-    "serve": "npm run fix:live-server && npx live-server dist --port=4000 --wait=0 --no-browser",
+    "serve": "npm run fix:live-server && npx live-server dist --port=3000 --wait=0 --no-browser",
     "lvdv": "npm-run-all --parallel gulp serve",
-    "brws": "firefox http://127.0.0.1:4000/ & .",
+    "brws": "firefox http://127.0.0.1:3000/ & .",
     "www": "ssh -R 80:localhost:3000 serveo.net",
     "deploy": "gh-pages -d dist"
   },
