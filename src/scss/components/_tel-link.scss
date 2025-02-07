@@ -42,14 +42,16 @@
     opacity: 1;
 }
 
-// @for $i from 1 through 4 {
-//     .tel-link:nth-of-type(#{$i}) {
-//       top: 260px + ($i - 1) * 60px;
-//     }
-// }
+@for $i from 1 through 4 {
+    .tel-link:nth-of-type(#{$i}) {
+      top: 94.5vh - ($i - 1) * 5.5vh;
+    }
+}
 
 @mixin mq-tel-link(){
-    .tel-link {
-        top:84.5vh;
+    @for $i from 1 through 4 {
+        .tel-link:nth-of-type(#{$i}) {
+          top: 84.5vh - ($i - 1) * 7.3vh;
+        }
     }
 }
