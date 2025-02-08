@@ -1,7 +1,6 @@
 mixin testos()
     section.testos
         h2=testimonialTitle
-
         .slider-container
             .quote-wrapper
                     each testo in testimonials
@@ -12,6 +11,6 @@ mixin testos()
             .dots
                 each testo, index in testimonials
                     .dot(onclick=`goToQuote(${index})`)
-
         .arrow.left(onclick="prevQuote()") &#8592;
         .arrow.right(onclick="nextQuote()") &#8594;
+    +hotline-box()

@@ -16,7 +16,7 @@
     // justify-content: center;
 
     background-color: rgb(0, 204, 255);
-    color: var(--secondary-color);
+    color: var(--secondary-black);
     
     transition: width 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
@@ -25,7 +25,7 @@
 .tel-link:hover {
     width: 170px;
     background-color: cyan;
-    color: var(--secondary-color);
+    color: var(--secondary-black);
 }
 
 .tel-link .icon {
