@@ -10,7 +10,7 @@
     "lvdv": "npm-run-all --parallel gulp serve",
     "brws": "firefox http://127.0.0.1:3000/ & .",
     "www": "ssh -R 80:localhost:3000 serveo.net",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist/variants"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,7 @@
     "gulp-imagemin": "^9.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^6.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
