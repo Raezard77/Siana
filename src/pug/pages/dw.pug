@@ -1,0 +1,33 @@
+//-- Includes
+include ../boilerplate/manager
+include ../data/dw-d
+
+//-- HTML
+doctype html
+html(lang="en" data-theme="light")
+
+
+
+    //-- Head
+    +head()
+
+
+
+    //-- Body
+    // Created By Raezard77
+    body
+        header
+            +pop-form-btn()
+            +tel-link()
+            +tel-link("01278949110")
+            +tel-link(hotline)
+            +pop-form()
+            main
+                h1
+                    +text-slider(varBrand)
+            +servicesSection(servicesSections)
+            +testos(testimonials)
+
+script(defer)
+    | const textSlider = {wordList: ['ثلاجات', 'غسالات', 'شاشات'],Interval: 3e3}
++loadScripts()
