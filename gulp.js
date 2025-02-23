@@ -36,7 +36,7 @@ const watchOptions = {readDelay: 0, ignoreInitial: false}
 
 
 //-- Custom
-const brands = ['sh', 'wh', 'dw']
+const brands = ['sh', 'wh', 'dw', 'ar']
 
 
 
